@@ -1,132 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="100%">
   <defs>
-    <!-- Muted Dark Minimalist Background -->
-    <radialGradient id="bg-glow" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#161B22" />
+    <!-- Vercel / Linear Style Minimalist Background -->
+    <radialGradient id="ambient-light" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1C2128" />
       <stop offset="60%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#080B0F" />
+      <stop offset="100%" stop-color="#05070A" />
     </radialGradient>
 
-    <!-- Subtle Premium Glow -->
-    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <!-- Subtle Soft Glow -->
+    <filter id="subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <!-- Minimalist Greek Key Pattern Band -->
-    <pattern id="greek-band" width="40" height="16" patternUnits="userSpaceOnUse">
-      <path d="M 0 16 L 0 0 L 16 0 L 16 10 L 8 10 L 8 5 L 11 5 M 16 16 L 24 16 L 24 0 L 40 0 L 40 10 L 32 10 L 32 5 L 35 5" fill="none" stroke="#388BFD" stroke-opacity="0.3" stroke-width="1.2"/>
-    </pattern>
+    <!-- Elegant Linear Gradient for Name -->
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#E6EDF3" />
+      <stop offset="100%" stop-color="#58A6FF" />
+    </linearGradient>
   </defs>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;display=swap');
 
-    .greek-letter {
+    .greek-char {
       fill: none;
-      stroke: #F0F6FC;
-      stroke-width: 3.5;
+      stroke: url(#text-grad);
+      stroke-width: 3.2;
       stroke-linecap: round;
       stroke-linejoin: round;
-      filter: url(#soft-glow);
-      stroke-dasharray: 400;
-      stroke-dashoffset: 400;
-      animation: draw-text 3.5s ease-out forwards, subtle-pulse 4s ease-in-out infinite alternate 3.5s;
+      filter: url(#subtle-glow);
+      stroke-dasharray: 350;
+      stroke-dashoffset: 350;
+      animation: strokeDraw 2.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
-    .subtitle-text {
-      font-family: 'Fira Code', -apple-system, monospace;
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 5px;
-      fill: #58A6FF;
-      opacity: 0;
-      animation: fade-in 1.5s ease-out forwards 2s;
-    }
-
-    .tag-text {
+    .subtitle-sub {
       font-family: 'Fira Code', monospace;
-      font-size: 11px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 6px;
       fill: #8B949E;
-      letter-spacing: 3px;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-out forwards 1.8s;
     }
 
-    @keyframes draw-text {
+    .badge-label {
+      font-family: 'Fira Code', monospace;
+      font-size: 10px;
+      fill: #58A6FF;
+      letter-spacing: 3px;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-out forwards 1.2s;
+    }
+
+    @keyframes strokeDraw {
       to { stroke-dashoffset: 0; }
     }
 
-    @keyframes fade-in {
-      to { opacity: 0.9; }
-    }
-
-    @keyframes subtle-pulse {
-      0% { opacity: 0.85; stroke: #F0F6FC; }
-      100% { opacity: 1; stroke: #58A6FF; }
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
   </style>
 
-  <!-- Background -->
-  <rect width="1200" height="360" fill="url(#bg-glow)" rx="12" />
-  <rect width="1200" height="360" fill="none" stroke="#30363D" stroke-width="1" rx="12" />
+  <!-- Background Canvas -->
+  <rect width="1200" height="280" fill="url(#ambient-light)" rx="12" />
+  <rect width="1200" height="280" fill="none" stroke="#30363D" stroke-width="1" rx="12" />
 
-  <!-- Top & Bottom Muted Greek Meander Bands -->
-  <rect x="30" y="30" width="1140" height="14" fill="url(#greek-band)" />
-  <rect x="30" y="316" width="1140" height="14" fill="url(#greek-band)" />
+  <!-- Minimal Top Subtitle Badge -->
+  <text x="600" y="55" text-anchor="middle" class="badge-label">SYSTEM ARCHITECT // ML • LLM • APP DEV</text>
+  <line x1="500" y1="68" x2="700" y2="68" stroke="#30363D" stroke-width="1" />
 
-  <!-- Header Category Badge -->
-  <g transform="translate(600, 75)">
-    <text x="0" y="0" text-anchor="middle" class="tag-text">AI SYSTEMS &amp; FULL-STACK ARCHITECTURE</text>
-  </g>
-
-  <!-- GREEK VECTOR TYPOGRAPHY FOR "SHREYAS RAJASHEKAR" -->
-  <!-- Name Line 1: SHREYAS -->
-  <g transform="translate(365, 110)">
+  <!-- GREEK VECTOR TYPOGRAPHY: SHREYAS -->
+  <g transform="translate(435, 95)">
     <!-- S -->
-    <path class="greek-letter" d="M 24 6 L 6 6 L 18 24 L 6 42 L 24 42" />
+    <path class="greek-char" d="M 22 4 L 4 4 L 16 22 L 4 40 L 22 40" />
     <!-- H -->
-    <path class="greek-letter" d="M 36 6 L 36 42 M 54 6 L 54 42 M 36 24 L 54 24" />
+    <path class="greek-char" d="M 34 4 L 34 40 M 52 4 L 52 40 M 34 22 L 52 22" />
     <!-- R -->
-    <path class="greek-letter" d="M 66 6 L 66 42 M 66 6 L 82 6 L 86 15 L 82 24 L 66 24 M 76 24 L 86 42" />
+    <path class="greek-char" d="M 64 4 L 64 40 M 64 4 L 78 4 L 82 13 L 78 22 L 64 22 M 74 22 L 84 40" />
     <!-- E -->
-    <path class="greek-letter" d="M 98 6 L 98 42 M 98 6 L 114 6 M 98 24 L 110 24 M 98 42 L 114 42" />
+    <path class="greek-char" d="M 96 4 L 96 40 M 96 4 L 112 4 M 96 22 L 108 22 M 96 40 L 112 40" />
     <!-- Y -->
-    <path class="greek-letter" d="M 126 6 L 135 24 L 144 6 M 135 24 L 135 42" />
+    <path class="greek-char" d="M 124 4 L 133 20 L 142 4 M 133 20 L 133 40" />
     <!-- A -->
-    <path class="greek-letter" d="M 165 6 L 155 42 M 165 6 L 175 42 M 159 30 L 171 30" />
+    <path class="greek-char" d="M 163 4 L 153 40 M 163 4 L 173 40 M 157 28 L 169 28" />
     <!-- S -->
-    <path class="greek-letter" d="M 204 6 L 186 6 L 198 24 L 186 42 L 204 42" />
+    <path class="greek-char" d="M 202 4 L 184 4 L 196 22 L 184 40 L 202 40" />
   </g>
 
-  <!-- Name Line 2: RAJASHEKAR -->
-  <g transform="translate(320, 170)">
+  <!-- GREEK VECTOR TYPOGRAPHY: RAJASHEKAR -->
+  <g transform="translate(390, 152)">
     <!-- R -->
-    <path class="greek-letter" d="M 6 6 L 6 42 M 6 6 L 22 6 L 26 15 L 22 24 L 6 24 M 16 24 L 26 42" />
+    <path class="greek-char" d="M 4 4 L 4 40 M 4 4 L 18 4 L 22 13 L 18 22 L 4 22 M 14 22 L 24 40" />
     <!-- A -->
-    <path class="greek-letter" d="M 46 6 L 36 42 M 46 6 L 56 42 M 40 30 L 52 30" />
+    <path class="greek-char" d="M 44 4 L 34 40 M 44 4 L 54 40 M 38 28 L 50 28" />
     <!-- J -->
-    <path class="greek-letter" d="M 66 6 L 84 6 M 78 6 L 78 36 L 68 42" />
+    <path class="greek-char" d="M 64 4 L 82 4 M 76 4 L 76 34 L 66 40" />
     <!-- A -->
-    <path class="greek-letter" d="M 104 6 L 94 42 M 104 6 L 114 42 M 98 30 L 110 30" />
+    <path class="greek-char" d="M 102 4 L 92 40 M 102 4 L 112 40 M 96 28 L 108 28" />
     <!-- S -->
-    <path class="greek-letter" d="M 142 6 L 124 6 L 136 24 L 124 42 L 142 42" />
+    <path class="greek-char" d="M 140 4 L 122 4 L 134 22 L 122 40 L 140 40" />
     <!-- H -->
-    <path class="greek-letter" d="M 154 6 L 154 42 M 172 6 L 172 42 M 154 24 L 172 24" />
+    <path class="greek-char" d="M 152 4 L 152 40 M 170 4 L 170 40 M 152 22 L 170 22" />
     <!-- E -->
-    <path class="greek-letter" d="M 184 6 L 184 42 M 184 6 L 200 6 M 184 24 L 196 24 M 184 42 L 200 42" />
+    <path class="greek-char" d="M 182 4 L 182 40 M 182 4 L 198 4 M 182 22 L 194 22 M 182 40 L 198 40" />
     <!-- K -->
-    <path class="greek-letter" d="M 212 6 L 212 42 M 228 6 L 212 24 L 228 42" />
+    <path class="greek-char" d="M 210 4 L 210 40 M 226 4 L 210 22 L 226 40" />
     <!-- A -->
-    <path class="greek-letter" d="M 248 6 L 238 42 M 248 6 L 258 42 M 242 30 L 254 30" />
+    <path class="greek-char" d="M 246 4 L 236 40 M 246 4 L 256 40 M 240 28 L 252 28" />
     <!-- R -->
-    <path class="greek-letter" d="M 270 6 L 270 42 M 270 6 L 286 6 L 290 15 L 286 24 L 270 24 M 280 24 L 290 42" />
+    <path class="greek-char" d="M 268 4 L 268 40 M 268 4 L 282 4 L 286 13 L 282 22 L 268 22 M 278 22 L 288 40" />
   </g>
 
-  <!-- Minimalist Separator Line -->
-  <line x1="450" y1="242" x2="750" y2="242" stroke="#388BFD" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round"/>
-
-  <!-- Subtitle -->
-  <text x="600" y="275" text-anchor="middle" class="subtitle-text">MACHINE LEARNING &amp; LLMs   •   APP DEVELOPMENT   •   V2V OS</text>
+  <!-- Minimal Subtitle -->
+  <text x="600" y="232" text-anchor="middle" class="subtitle-sub">MACHINE LEARNING &amp; LLMs   •   APP DEVELOPMENT   •   V2V OS</text>
 </svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footer-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="30%" stop-color="#121824" />
+      <stop offset="70%" stop-color="#121824" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+
+    <linearGradient id="neon-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF" />
+      <stop offset="33%" stop-color="#5B8CFF" />
+      <stop offset="66%" stop-color="#8A2BE2" />
+      <stop offset="100%" stop-color="#00FFA6" />
+    </linearGradient>
+
+    <filter id="ft-glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="120" fill="url(#footer-grad)" rx="12"/>
+  <path d="M 0 10 Q 300 30 600 10 T 1200 10" fill="none" stroke="url(#neon-line)" stroke-width="2" filter="url(#ft-glow)"/>
+
+  <text x="600" y="55" text-anchor="middle" font-family="'Fira Code', monospace" font-size="16" fill="#00F5FF" letter-spacing="3">
+    CONNECTING MACHINES. BUILDING INTELLIGENCE. ENGINEERING THE FUTURE.
+  </text>
+
+  <text x="600" y="85" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="13" fill="#5B8CFF" letter-spacing="1">
+    Designed with ⚡ by Shreyas Rajashekar — Bengaluru, India
+  </text>
+</svg>

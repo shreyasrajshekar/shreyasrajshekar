@@ -1,16 +1,94 @@
-Hi everyone! I’m Shreyas Rajashekar,
-an intermediate developer passionate about building projects across a wide range of topics. Currently, I’m working on a couple of React-based projects. Always open to collaboration and learning — feel free to reach out anytime!
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/shreyas.r_26) 
+<div align="center">
 
-# 💻 Tech Stack:
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Gimp](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi) ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=shreyasrajshekar&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=shreyasrajshekar&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=shreyasrajshekar&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<img src="./assets/banner.png" alt="Shreyas banner" width="100%" />
 
----
-[![](https://visitcount.itsvg.in/api?id=shreyasrajshekar&icon=0&color=0)](https://visitcount.itsvg.in)
+<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=14&duration=2500&pause=800&color=00FFEA&background=111122&center=true&vCenter=true&width=650&lines=%3E+LOADING+PLAYER+PROFILE...;%3E+BBA+STUDENT+%40+CHRIST+UNIVERSITY;%3E+BUILDING+AI+AGENTS+FOR+DEEPMIND+HACKATHON;%3E+INSERT+COIN+TO+CONTINUE" alt="Typing SVG" />
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
+
+</div>
+
+## 🕹️ PLAYER STATUS
+
+```
+┌─────────────────────────────────────────────┐
+│  NAME     : Shreyas                          │
+│  CLASS    : BBA Student / Builder            │
+│  BASE     : Bengaluru, India                 │
+│  QUEST    : Google DeepMind Hackathon (T3)   │
+│  MODE     : Business Strategy + AI Systems   │
+└─────────────────────────────────────────────┘
+```
+
+## 🎮 CURRENT LEVEL
+
+- 🤖 Building a **multi-agent code-fix pipeline** (Triager → Coder → Reviewer → Fixer) using Google's Interactions API + Managed Agents
+- 📈 Studying international trade theory & market-entry strategy
+- 🧠 Grinding XP in AI systems design
+
+## ⚡ SKILL TREE
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,html,css,git,github,vscode&theme=dark" />
+</p>
+
+```
+PYTHON       ████████████░░░░  75%
+JAVASCRIPT   █████████░░░░░░░  55%
+STRATEGY     ██████████████░░  90%
+HACKATHONS   ████████████████ 100%  [MAX LEVEL]
+```
+
+## 🐍 CONTRIBUTION SNAKE
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/yourusername/yourusername/output/github-contribution-grid-snake.svg" alt="snake game" />
+</p>
+
+<sub>⚠️ Requires a one-time GitHub Action setup — see instructions below.</sub>
+
+## 📊 STATS (SYNTHWAVE MODE)
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=synthwave&hide_border=true&bg_color=111122" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=synthwave&hide_border=true&bg_color=111122" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=synthwave&hide_border=true&background=111122" width="70%" />
+</p>
+
+## 🏆 ACHIEVEMENTS UNLOCKED
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=yourusername&theme=discord&no-frame=true&row=1&column=6" />
+</p>
+
+## 👾 FEATURED QUESTS
+
+| Project | Description |
+|---|---|
+| 🔗 [Project Name](https://github.com/yourusername/repo) | One-line impact statement |
+| 🔗 [Project Name](https://github.com/yourusername/repo) | One-line impact statement |
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
+
+## 📡 CONNECT
+
+<p align="center">
+  <a href="https://linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LINKEDIN-111122?style=for-the-badge&logo=linkedin&logoColor=00FFEA"/></a>
+  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/EMAIL-111122?style=for-the-badge&logo=gmail&logoColor=FF2E63"/></a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=yourusername&label=PLAYERS+VISITED&color=9D4EDD&style=for-the-badge" />
+</p>
+
+<div align="center">
+
+```
+GAME OVER? NOPE — LET'S CODE.
+      PRESS ANY KEY TO CONTINUE_
+```
+
+</div>

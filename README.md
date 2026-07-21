@@ -1,94 +1,108 @@
 <div align="center">
 
-<img src="./assets/banner.png" alt="Shreyas banner" width="100%" />
+# ⚡ SHREYAS RAJASHEKAR ⚡
 
-<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=14&duration=2500&pause=800&color=00FFEA&background=111122&center=true&vCenter=true&width=650&lines=%3E+LOADING+PLAYER+PROFILE...;%3E+BBA+STUDENT+%40+CHRIST+UNIVERSITY;%3E+BUILDING+AI+AGENTS+FOR+DEEPMIND+HACKATHON;%3E+INSERT+COIN+TO+CONTINUE" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=800&color=00FFEA&background=0D111700&center=true&vCenter=true&width=700&lines=%3E+COMPUTER+SCIENCE+%26+ENGINEERING+%40+NMIT+BENGALURU;%3E+BUILDING+MULT-AGENT+AI+SYSTEMS+%26+V2V+OS;%3E+FULL-STACK+DEVELOPER+%2B+EMBEDDED+SYSTEMS;%3E+EXPLORE+MY+PROJECTS+BELOW...;" alt="Typing SVG" />
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
+<br/>
+
+<a href="https://www.linkedin.com/in/shreyas-rajashekar-me/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://github.com/shreyasrajshekar"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="mailto:shreyasrajashekar@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%" />
 
 </div>
 
-## 🕹️ PLAYER STATUS
+## 👨‍💻 ABOUT ME
 
 ```
-┌─────────────────────────────────────────────┐
-│  NAME     : Shreyas                          │
-│  CLASS    : BBA Student / Builder            │
-│  BASE     : Bengaluru, India                 │
-│  QUEST    : Google DeepMind Hackathon (T3)   │
-│  MODE     : Business Strategy + AI Systems   │
-└─────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────┐
+│  NAME         : Shreyas Rajashekar                                      │
+│  DEGREE       : B.E. Computer Science & Engineering                     │
+│  INSTITUTION  : Nitte Meenakshi Institute of Technology (NMIT)          │
+│  LOCATION     : Bengaluru, India 🇮🇳                                      │
+│  FOCUS        : Multi-Agent AI | V2V Communication | Full-Stack | IoT   │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 🎮 CURRENT LEVEL
+- 🎓 Pursuing B.E. in **Computer Science and Engineering** at **NMIT Bengaluru**.
+- 🚀 Passionate about building **autonomous multi-agent AI systems**, **next-generation V2V communication platforms**, and **scalable web applications**.
+- 🤖 Enthusiastic about microcontrollers, Arduino IoT projects, and hardware-software interaction.
+- 🌐 GDG NMIT contributor & active developer in competitive coding and CTF challenges.
 
-- 🤖 Building a **multi-agent code-fix pipeline** (Triager → Coder → Reviewer → Fixer) using Google's Interactions API + Managed Agents
-- 📈 Studying international trade theory & market-entry strategy
-- 🧠 Grinding XP in AI systems design
+---
 
-## ⚡ SKILL TREE
+## 🛠️ TECH STACK
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css,git,github,vscode&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=ts,js,python,cpp,cs,html,css,react,nextjs,nodejs,express,git,github,vscode,arduino&theme=dark" />
 </p>
 
-```
-PYTHON       ████████████░░░░  75%
-JAVASCRIPT   █████████░░░░░░░  55%
-STRATEGY     ██████████████░░  90%
-HACKATHONS   ████████████████ 100%  [MAX LEVEL]
-```
+| Category | Technologies & Tools |
+| :--- | :--- |
+| **Languages** | TypeScript, JavaScript, Python, C++, C#, GDScript |
+| **Web & Frameworks** | React, Next.js, Node.js, Express, HTML5, CSS3 |
+| **Systems & AI** | Multi-Agent Orchestration, V2V Systems, Autonomous Workflows |
+| **Hardware & IoT** | Arduino, Embedded C++, Sensors & Actuators, Microcontrollers |
+| **Dev Tools** | Git, GitHub, VS Code, Postman, Blender |
 
-## 🐍 CONTRIBUTION SNAKE
+---
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/yourusername/output/github-contribution-grid-snake.svg" alt="snake game" />
-</p>
+## 🚀 FEATURED PROJECTS
 
-<sub>⚠️ Requires a one-time GitHub Action setup — see instructions below.</sub>
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| 🛡️ **[chowki-ranger](https://github.com/shreyasrajshekar/chowki-ranger)** | Autonomous Multi-Agent Orchestration engine & Ranger Station platform | TypeScript, Node.js |
+| 🏎️ **[drivelink_website](https://github.com/shreyasrajshekar/drivelink_website)** | DriveLink - Next-generation Vehicle-to-Vehicle (V2V) Communication OS | TypeScript, Web Tech |
+| 🛣️ **[GPHS](https://github.com/shreyasrajshekar/GPHS)** | Global Pothole System - Real-time road condition reporting & hazard mapping | JavaScript, Web APIs |
+| 🍳 **[QuickCookApp](https://github.com/shreyasrajshekar/QuickCookApp)** | Smart culinary assistant suggesting recipes based on available groceries | JavaScript |
+| 🌐 **[Gdg-NMIT-Website](https://github.com/shreyasrajshekar/Gdg-NMIT-Website)** | Event management platform & portal for Google Developer Group NMIT | TypeScript |
+| ⚡ **[Aurdino_projects](https://github.com/shreyasrajshekar/Aurdino_projects)** | Hands-on electronics featuring sensors, LEDs, motors & smart gadgets | C++, Arduino |
+| 🥩 **[MeatUp](https://github.com/shreyasrajshekar/MeatUp)** | E-commerce application for meat distribution & management | JavaScript |
 
-## 📊 STATS (SYNTHWAVE MODE)
+---
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=synthwave&hide_border=true&bg_color=111122" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=synthwave&hide_border=true&bg_color=111122" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=synthwave&hide_border=true&background=111122" width="70%" />
-</p>
-
-## 🏆 ACHIEVEMENTS UNLOCKED
+## 📊 GITHUB STATS
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=yourusername&theme=discord&no-frame=true&row=1&column=6" />
-</p>
-
-## 👾 FEATURED QUESTS
-
-| Project | Description |
-|---|---|
-| 🔗 [Project Name](https://github.com/yourusername/repo) | One-line impact statement |
-| 🔗 [Project Name](https://github.com/yourusername/repo) | One-line impact statement |
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
-
-## 📡 CONNECT
-
-<p align="center">
-  <a href="https://linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LINKEDIN-111122?style=for-the-badge&logo=linkedin&logoColor=00FFEA"/></a>
-  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/EMAIL-111122?style=for-the-badge&logo=gmail&logoColor=FF2E63"/></a>
+  <img src="https://github-readme-stats.vercel.app/api?username=shreyasrajshekar&show_icons=true&theme=synthwave&hide_border=true&bg_color=0D1117" width="48%" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shreyasrajshekar&layout=compact&theme=synthwave&hide_border=true&bg_color=0D1117" width="48%" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yourusername&label=PLAYERS+VISITED&color=9D4EDD&style=for-the-badge" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shreyasrajshekar&theme=synthwave&hide_border=true&background=0D1117" width="80%" alt="GitHub Streak" />
 </p>
+
+---
+
+## 🏆 TROPHIES
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=shreyasrajshekar&theme=synthwave&no-frame=true&row=1&column=6" alt="GitHub Profile Trophies" />
+</p>
+
+---
 
 <div align="center">
 
-```
-GAME OVER? NOPE — LET'S CODE.
-      PRESS ANY KEY TO CONTINUE_
-```
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%" />
+
+### 🌐 CONNECT WITH ME
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/shreyas-rajashekar-me/">
+    <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://github.com/shreyasrajshekar">
+    <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=shreyasrajshekar&label=PROFILE+VIEWS&color=00FFEA&style=for-the-badge" alt="Profile Views" />
+</p>
 
 </div>

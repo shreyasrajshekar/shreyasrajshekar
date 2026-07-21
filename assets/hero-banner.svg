@@ -2,15 +2,15 @@
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080B10" />
+      <stop offset="0%" stop-color="#07090E" />
       <stop offset="50%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#121824" />
+      <stop offset="100%" stop-color="#111622" />
     </linearGradient>
 
     <!-- Text & Glow Gradients -->
-    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="greek-gold" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00F5FF" />
-      <stop offset="35%" stop-color="#5B8CFF" />
+      <stop offset="40%" stop-color="#5B8CFF" />
       <stop offset="70%" stop-color="#00FFA6" />
       <stop offset="100%" stop-color="#8A2BE2" />
     </linearGradient>
@@ -27,7 +27,7 @@
 
     <!-- Hexagon Pattern -->
     <pattern id="hex-grid" width="40" height="69.282" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 20 11.547 L 0 0 L 0 23.094 L 20 34.641 L 40 23.094 Z M 0 34.641 L 20 46.188 L 0 57.735 L 0 80.829 L 20 92.376 L 40 80.829 L 40 57.735 L 20 46.188 Z" fill="none" stroke="#5B8CFF" stroke-opacity="0.07" stroke-width="1"/>
+      <path d="M 40 0 L 20 11.547 L 0 0 L 0 23.094 L 20 34.641 L 40 23.094 Z M 0 34.641 L 20 46.188 L 0 57.735 L 0 80.829 L 20 92.376 L 40 80.829 L 40 57.735 L 20 46.188 Z" fill="none" stroke="#5B8CFF" stroke-opacity="0.06" stroke-width="1"/>
     </pattern>
 
     <!-- Filters for Glow Effects -->
@@ -41,7 +41,7 @@
 
     <filter id="glow-title" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="8" result="blur1" />
-      <feGaussianBlur stdDeviation="15" result="blur2" />
+      <feGaussianBlur stdDeviation="16" result="blur2" />
       <feMerge>
         <feMergeNode in="blur2" />
         <feMergeNode in="blur1" />
@@ -51,33 +51,32 @@
   </defs>
 
   <style>
-    .title-text {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&amp;family=Fira+Code:wght@400;600&amp;display=swap');
+    
+    .greek-title {
+      font-family: 'Cinzel', 'Times New Roman', serif;
       font-weight: 900;
-      font-size: 52px;
-      letter-spacing: 6px;
-      fill: url(#title-grad);
+      font-size: 50px;
+      letter-spacing: 12px;
+      fill: url(#greek-gold);
       filter: url(#glow-title);
     }
     .subtitle-text {
-      font-family: 'Fira Code', 'Courier New', monospace;
+      font-family: 'Fira Code', monospace;
       font-size: 15px;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       fill: #00F5FF;
-      opacity: 0.9;
+      opacity: 0.95;
     }
     .tag-text {
       font-family: 'Fira Code', monospace;
-      font-size: 12px;
+      font-size: 11px;
       fill: #00FFA6;
       letter-spacing: 2px;
     }
     .circuit-line {
       stroke-dasharray: 10 15;
       animation: dash 20s linear infinite;
-    }
-    .circuit-pulse {
-      animation: pulse-glow 3s ease-in-out infinite alternate;
     }
     .node-pulse {
       animation: node-ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
@@ -86,10 +85,6 @@
       to {
         stroke-dashoffset: -1000;
       }
-    }
-    @keyframes pulse-glow {
-      0% { opacity: 0.3; filter: drop-shadow(0 0 2px #00F5FF); }
-      100% { opacity: 0.9; filter: drop-shadow(0 0 12px #00F5FF); }
     }
     @keyframes node-ping {
       0%, 100% { transform: scale(1); opacity: 0.8; }
@@ -101,72 +96,60 @@
   <rect width="1200" height="400" fill="url(#bg-grad)" rx="16" />
   <rect width="1200" height="400" fill="url(#hex-grid)" rx="16" />
 
-  <!-- Cyberpunk Border Frame -->
-  <rect x="2" y="2" width="1196" height="396" fill="none" stroke="url(#cyan-blue)" stroke-width="1.5" rx="14" opacity="0.6"/>
+  <!-- Outer Cyber-Greek Frame -->
+  <rect x="3" y="3" width="1194" height="394" fill="none" stroke="url(#cyan-blue)" stroke-width="1.5" rx="14" opacity="0.6"/>
   
-  <!-- Corner Accents -->
-  <path d="M 2 30 L 2 2 L 30 2" fill="none" stroke="#00F5FF" stroke-width="3" />
-  <path d="M 1198 30 L 1198 2 L 1170 2" fill="none" stroke="#00F5FF" stroke-width="3" />
-  <path d="M 2 370 L 2 398 L 30 398" fill="none" stroke="#00F5FF" stroke-width="3" />
-  <path d="M 1198 370 L 1198 398 L 1170 398" fill="none" stroke="#00F5FF" stroke-width="3" />
+  <!-- Greek Meander Corner Accents -->
+  <path d="M 3 35 L 3 3 L 35 3 M 3 15 L 15 15 L 15 3" fill="none" stroke="#00F5FF" stroke-width="2" />
+  <path d="M 1197 35 L 1197 3 L 1165 3 M 1197 15 L 1185 15 L 1185 3" fill="none" stroke="#00F5FF" stroke-width="2" />
+  <path d="M 3 365 L 3 397 L 35 397 M 3 385 L 15 385 L 15 397" fill="none" stroke="#00F5FF" stroke-width="2" />
+  <path d="M 1197 365 L 1197 397 L 1165 397 M 1197 385 L 1185 385 L 1185 397" fill="none" stroke="#00F5FF" stroke-width="2" />
 
-  <!-- Circuit Lines & AI Network Graphic Background -->
-  <!-- Left Circuitry -->
+  <!-- Neural ML Network Lines (Left & Right) -->
   <path class="circuit-line" d="M 50 200 L 150 200 L 220 130 L 350 130" fill="none" stroke="#5B8CFF" stroke-width="1.5" opacity="0.5"/>
   <path class="circuit-line" d="M 30 280 L 120 280 L 190 350 L 400 350" fill="none" stroke="#00F5FF" stroke-width="1.5" opacity="0.4"/>
-  <path d="M 150 200 L 180 230 L 300 230" fill="none" stroke="#8A2BE2" stroke-width="1" opacity="0.3"/>
-
-  <!-- Right Network Mesh -->
   <path class="circuit-line" d="M 1150 200 L 1050 200 L 980 270 L 850 270" fill="none" stroke="#00FFA6" stroke-width="1.5" opacity="0.5"/>
   <path class="circuit-line" d="M 1170 120 L 1080 120 L 1010 50 L 800 50" fill="none" stroke="#5B8CFF" stroke-width="1.5" opacity="0.4"/>
 
-  <!-- AI Nodes -->
+  <!-- LLM & ML Neural Network Nodes -->
   <circle cx="220" cy="130" r="5" fill="#00F5FF" filter="url(#glow-cyan)"/>
   <circle cx="350" cy="130" r="4" fill="#00FFA6" />
   <circle cx="190" cy="350" r="5" fill="#8A2BE2" filter="url(#glow-cyan)"/>
   <circle cx="980" cy="270" r="5" fill="#00F5FF" filter="url(#glow-cyan)"/>
   <circle cx="1010" cy="50" r="4" fill="#00FFA6" />
 
-  <!-- Glowing V2V Vehicle Node Network overlay -->
-  <g opacity="0.7">
-    <line x1="850" y1="270" x2="920" y2="210" stroke="#00F5FF" stroke-width="1" stroke-dasharray="4 4"/>
-    <line x1="920" y1="210" x2="980" y2="270" stroke="#5B8CFF" stroke-width="1"/>
-    <line x1="920" y1="210" x2="1050" y2="200" stroke="#00FFA6" stroke-width="1" stroke-dasharray="2 2"/>
-    <circle cx="920" cy="210" r="6" fill="#00F5FF" class="node-pulse"/>
-  </g>
-
   <!-- Central Glassmorphic Dashboard Panel -->
-  <rect x="250" y="70" width="700" height="260" rx="16" fill="#0D1117" fill-opacity="0.75" stroke="url(#cyan-blue)" stroke-width="1.5" filter="url(#glow-cyan)"/>
+  <rect x="230" y="65" width="740" height="270" rx="16" fill="#0D1117" fill-opacity="0.85" stroke="url(#cyan-blue)" stroke-width="1.5" filter="url(#glow-cyan)"/>
   
   <!-- System Tag Header -->
-  <g transform="translate(280, 108)">
-    <rect x="0" y="0" width="180" height="24" rx="12" fill="#5B8CFF" fill-opacity="0.15" stroke="#5B8CFF" stroke-opacity="0.4" stroke-width="1"/>
+  <g transform="translate(260, 102)">
+    <rect x="0" y="0" width="200" height="24" rx="12" fill="#5B8CFF" fill-opacity="0.15" stroke="#5B8CFF" stroke-opacity="0.4" stroke-width="1"/>
     <circle cx="14" cy="12" r="4" fill="#00FFA6" />
-    <text x="26" y="16" class="tag-text">SYSTEM // ONLINE</text>
+    <text x="26" y="16" class="tag-text">SYSTEM // ML &amp; LLM CORE</text>
   </g>
 
-  <g transform="translate(740, 108)">
-    <text x="0" y="16" class="tag-text" fill="#8A2BE2">V2V :: AI-ORCHESTRATION</text>
+  <g transform="translate(710, 102)">
+    <text x="0" y="16" class="tag-text" fill="#8A2BE2">APP DEV :: MULTI-AGENT</text>
   </g>
 
-  <!-- Main Hero Title -->
-  <text x="600" y="195" text-anchor="middle" class="title-text">SHREYAS RAJASHEKAR</text>
+  <!-- Main Hero Title (Classical / Greek Serif Font Aesthetic) -->
+  <text x="600" y="195" text-anchor="middle" class="greek-title">ΣHREYAS RAJASHEKAR</text>
 
-  <!-- Divider Bar in Hero -->
-  <path d="M 350 220 L 850 220" stroke="url(#purple-mint)" stroke-width="2" stroke-linecap="round" />
+  <!-- Divider Bar -->
+  <path d="M 330 220 L 870 220" stroke="url(#purple-mint)" stroke-width="2" stroke-linecap="round" />
 
-  <!-- Subtitle -->
-  <text x="600" y="255" text-anchor="middle" class="subtitle-text">AI SYSTEMS ENGINEER  |  VEHICLE NETWORKS  |  MULTI-AGENT ORCHESTRATION</text>
+  <!-- Subtitle emphasizing ML, LLM, App Dev -->
+  <text x="600" y="255" text-anchor="middle" class="subtitle-text">MACHINE LEARNING &amp; LLMs  |  APP DEVELOPMENT  |  V2V SYSTEMS</text>
   
-  <!-- Bottom Architecture Pill Badges -->
-  <g transform="translate(360, 280)">
-    <rect x="0" y="0" width="140" height="24" rx="6" fill="#161B22" stroke="#00F5FF" stroke-opacity="0.5" stroke-width="1"/>
-    <text x="70" y="16" text-anchor="middle" font-family="Fira Code" font-size="11" fill="#00F5FF">DISTRIBUTED AI</text>
+  <!-- Bottom Pill Badges -->
+  <g transform="translate(325, 282)">
+    <rect x="0" y="0" width="165" height="26" rx="6" fill="#161B22" stroke="#00F5FF" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="82.5" y="17" text-anchor="middle" font-family="Fira Code" font-size="11" fill="#00F5FF">🧠 ML &amp; LLM ARCH</text>
 
-    <rect x="155" y="0" width="160" height="24" rx="6" fill="#161B22" stroke="#5B8CFF" stroke-opacity="0.5" stroke-width="1"/>
-    <text x="235" y="16" text-anchor="middle" font-family="Fira Code" font-size="11" fill="#5B8CFF">DRIVELINK V2V OS</text>
+    <rect x="180" y="0" width="185" height="26" rx="6" fill="#161B22" stroke="#5B8CFF" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="272.5" y="17" text-anchor="middle" font-family="Fira Code" font-size="11" fill="#5B8CFF">📱 FULL-STACK APP DEV</text>
 
-    <rect x="330" y="0" width="150" height="24" rx="6" fill="#161B22" stroke="#00FFA6" stroke-opacity="0.5" stroke-width="1"/>
-    <text x="405" y="16" text-anchor="middle" font-family="Fira Code" font-size="11" fill="#00FFA6">EMBEDDED IoT</text>
+    <rect x="380" y="0" width="170" height="26" rx="6" fill="#161B22" stroke="#00FFA6" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="465" y="17" text-anchor="middle" font-family="Fira Code" font-size="11" fill="#00FFA6">🤖 MULTI-AGENT AI</text>
   </g>
 </svg>

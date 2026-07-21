@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#161B22" />
+    </linearGradient>
+    <linearGradient id="card-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5FF" />
+      <stop offset="50%" stop-color="#8A2BE2" />
+      <stop offset="100%" stop-color="#00FFA6" />
+    </linearGradient>
+    <filter id="card-glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .stat-header { font-family: 'Fira Code', monospace; font-size: 15px; font-weight: 700; fill: #00F5FF; letter-spacing: 2px; }
+    .stat-label { font-family: 'Fira Code', monospace; font-size: 12px; fill: #8B949E; }
+    .stat-number { font-family: 'Fira Code', monospace; font-size: 22px; font-weight: 800; fill: #00FFA6; }
+    .stat-sub { font-family: 'Fira Code', monospace; font-size: 11px; fill: #5B8CFF; }
+  </style>
+
+  <!-- Card Outer Frame -->
+  <rect width="1000" height="240" rx="12" fill="url(#card-bg)" stroke="url(#card-stroke)" stroke-width="1.5" filter="url(#card-glow)"/>
+
+  <!-- Top Title -->
+  <text x="30" y="38" class="stat-header">⚡ ARCHITECTURE METRICS &amp; TELEMETRY</text>
+  <line x1="30" y1="48" x2="970" y2="48" stroke="#5B8CFF" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Metric Column 1: Repos & Codebase -->
+  <g transform="translate(40, 75)">
+    <rect width="200" height="130" rx="8" fill="#161B22" stroke="#00F5FF" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="20" y="35" class="stat-label">PUBLIC REPOSITORIES</text>
+    <text x="20" y="75" class="stat-number">28+</text>
+    <text x="20" y="105" class="stat-sub">AI, Web &amp; Embedded</text>
+  </g>
+
+  <!-- Metric Column 2: Tech Domains -->
+  <g transform="translate(280, 75)">
+    <rect width="210" height="130" rx="8" fill="#161B22" stroke="#5B8CFF" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="20" y="35" class="stat-label">CORE DOMAINS</text>
+    <text x="20" y="70" class="stat-number" fill="#00F5FF">ML / LLMs</text>
+    <text x="20" y="105" class="stat-sub">Full Stack &amp; V2V OS</text>
+  </g>
+
+  <!-- Metric Column 3: Problem Solving / LeetCode -->
+  <g transform="translate(520, 75)">
+    <rect width="210" height="130" rx="8" fill="#161B22" stroke="#00FFA6" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="20" y="35" class="stat-label">ALGORITHMIC PRACTICE</text>
+    <text x="20" y="70" class="stat-number" fill="#FFA116">LeetCode</text>
+    <text x="20" y="105" class="stat-sub">DSA &amp; Problem Solving</text>
+  </g>
+
+  <!-- Metric Column 4: System Availability -->
+  <g transform="translate(760, 75)">
+    <rect width="200" height="130" rx="8" fill="#161B22" stroke="#8A2BE2" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="20" y="35" class="stat-label">AVAILABILITY</text>
+    <text x="20" y="70" class="stat-number" fill="#00FFA6">100%</text>
+    <text x="20" y="105" class="stat-sub">Open for Projects</text>
+  </g>
+</svg>

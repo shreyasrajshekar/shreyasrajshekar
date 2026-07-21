@@ -1,155 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#07090E" />
-      <stop offset="50%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#111622" />
-    </linearGradient>
+    <!-- Muted Dark Minimalist Background -->
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#161B22" />
+      <stop offset="60%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#080B0F" />
+    </radialGradient>
 
-    <!-- Text & Glow Gradients -->
-    <linearGradient id="greek-gold" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F5FF" />
-      <stop offset="40%" stop-color="#5B8CFF" />
-      <stop offset="70%" stop-color="#00FFA6" />
-      <stop offset="100%" stop-color="#8A2BE2" />
-    </linearGradient>
-
-    <linearGradient id="cyan-blue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#5B8CFF" stop-opacity="0.2" />
-    </linearGradient>
-
-    <linearGradient id="purple-mint" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8A2BE2" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#00FFA6" stop-opacity="0.9" />
-    </linearGradient>
-
-    <!-- Hexagon Pattern -->
-    <pattern id="hex-grid" width="40" height="69.282" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 20 11.547 L 0 0 L 0 23.094 L 20 34.641 L 40 23.094 Z M 0 34.641 L 20 46.188 L 0 57.735 L 0 80.829 L 20 92.376 L 40 80.829 L 40 57.735 L 20 46.188 Z" fill="none" stroke="#5B8CFF" stroke-opacity="0.06" stroke-width="1"/>
-    </pattern>
-
-    <!-- Filters for Glow Effects -->
-    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
+    <!-- Subtle Premium Glow -->
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <filter id="glow-title" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur1" />
-      <feGaussianBlur stdDeviation="16" result="blur2" />
-      <feMerge>
-        <feMergeNode in="blur2" />
-        <feMergeNode in="blur1" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <!-- Minimalist Greek Key Pattern Band -->
+    <pattern id="greek-band" width="40" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 0 16 L 0 0 L 16 0 L 16 10 L 8 10 L 8 5 L 11 5 M 16 16 L 24 16 L 24 0 L 40 0 L 40 10 L 32 10 L 32 5 L 35 5" fill="none" stroke="#388BFD" stroke-opacity="0.3" stroke-width="1.2"/>
+    </pattern>
   </defs>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&amp;family=Fira+Code:wght@400;600&amp;display=swap');
-    
-    .greek-title {
-      font-family: 'Cinzel', 'Times New Roman', serif;
-      font-weight: 900;
-      font-size: 50px;
-      letter-spacing: 12px;
-      fill: url(#greek-gold);
-      filter: url(#glow-title);
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;display=swap');
+
+    .greek-letter {
+      fill: none;
+      stroke: #F0F6FC;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: url(#soft-glow);
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+      animation: draw-text 3.5s ease-out forwards, subtle-pulse 4s ease-in-out infinite alternate 3.5s;
     }
+
     .subtitle-text {
-      font-family: 'Fira Code', monospace;
-      font-size: 15px;
-      letter-spacing: 4px;
-      fill: #00F5FF;
-      opacity: 0.95;
+      font-family: 'Fira Code', -apple-system, monospace;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      fill: #58A6FF;
+      opacity: 0;
+      animation: fade-in 1.5s ease-out forwards 2s;
     }
+
     .tag-text {
       font-family: 'Fira Code', monospace;
       font-size: 11px;
-      fill: #00FFA6;
-      letter-spacing: 2px;
+      fill: #8B949E;
+      letter-spacing: 3px;
     }
-    .circuit-line {
-      stroke-dasharray: 10 15;
-      animation: dash 20s linear infinite;
+
+    @keyframes draw-text {
+      to { stroke-dashoffset: 0; }
     }
-    .node-pulse {
-      animation: node-ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+    @keyframes fade-in {
+      to { opacity: 0.9; }
     }
-    @keyframes dash {
-      to {
-        stroke-dashoffset: -1000;
-      }
-    }
-    @keyframes node-ping {
-      0%, 100% { transform: scale(1); opacity: 0.8; }
-      50% { transform: scale(1.4); opacity: 1; }
+
+    @keyframes subtle-pulse {
+      0% { opacity: 0.85; stroke: #F0F6FC; }
+      100% { opacity: 1; stroke: #58A6FF; }
     }
   </style>
 
   <!-- Background -->
-  <rect width="1200" height="400" fill="url(#bg-grad)" rx="16" />
-  <rect width="1200" height="400" fill="url(#hex-grid)" rx="16" />
+  <rect width="1200" height="360" fill="url(#bg-glow)" rx="12" />
+  <rect width="1200" height="360" fill="none" stroke="#30363D" stroke-width="1" rx="12" />
 
-  <!-- Outer Cyber-Greek Frame -->
-  <rect x="3" y="3" width="1194" height="394" fill="none" stroke="url(#cyan-blue)" stroke-width="1.5" rx="14" opacity="0.6"/>
-  
-  <!-- Greek Meander Corner Accents -->
-  <path d="M 3 35 L 3 3 L 35 3 M 3 15 L 15 15 L 15 3" fill="none" stroke="#00F5FF" stroke-width="2" />
-  <path d="M 1197 35 L 1197 3 L 1165 3 M 1197 15 L 1185 15 L 1185 3" fill="none" stroke="#00F5FF" stroke-width="2" />
-  <path d="M 3 365 L 3 397 L 35 397 M 3 385 L 15 385 L 15 397" fill="none" stroke="#00F5FF" stroke-width="2" />
-  <path d="M 1197 365 L 1197 397 L 1165 397 M 1197 385 L 1185 385 L 1185 397" fill="none" stroke="#00F5FF" stroke-width="2" />
+  <!-- Top & Bottom Muted Greek Meander Bands -->
+  <rect x="30" y="30" width="1140" height="14" fill="url(#greek-band)" />
+  <rect x="30" y="316" width="1140" height="14" fill="url(#greek-band)" />
 
-  <!-- Neural ML Network Lines (Left & Right) -->
-  <path class="circuit-line" d="M 50 200 L 150 200 L 220 130 L 350 130" fill="none" stroke="#5B8CFF" stroke-width="1.5" opacity="0.5"/>
-  <path class="circuit-line" d="M 30 280 L 120 280 L 190 350 L 400 350" fill="none" stroke="#00F5FF" stroke-width="1.5" opacity="0.4"/>
-  <path class="circuit-line" d="M 1150 200 L 1050 200 L 980 270 L 850 270" fill="none" stroke="#00FFA6" stroke-width="1.5" opacity="0.5"/>
-  <path class="circuit-line" d="M 1170 120 L 1080 120 L 1010 50 L 800 50" fill="none" stroke="#5B8CFF" stroke-width="1.5" opacity="0.4"/>
-
-  <!-- LLM & ML Neural Network Nodes -->
-  <circle cx="220" cy="130" r="5" fill="#00F5FF" filter="url(#glow-cyan)"/>
-  <circle cx="350" cy="130" r="4" fill="#00FFA6" />
-  <circle cx="190" cy="350" r="5" fill="#8A2BE2" filter="url(#glow-cyan)"/>
-  <circle cx="980" cy="270" r="5" fill="#00F5FF" filter="url(#glow-cyan)"/>
-  <circle cx="1010" cy="50" r="4" fill="#00FFA6" />
-
-  <!-- Central Glassmorphic Dashboard Panel -->
-  <rect x="230" y="65" width="740" height="270" rx="16" fill="#0D1117" fill-opacity="0.85" stroke="url(#cyan-blue)" stroke-width="1.5" filter="url(#glow-cyan)"/>
-  
-  <!-- System Tag Header -->
-  <g transform="translate(260, 102)">
-    <rect x="0" y="0" width="200" height="24" rx="12" fill="#5B8CFF" fill-opacity="0.15" stroke="#5B8CFF" stroke-opacity="0.4" stroke-width="1"/>
-    <circle cx="14" cy="12" r="4" fill="#00FFA6" />
-    <text x="26" y="16" class="tag-text">SYSTEM // ML &amp; LLM CORE</text>
+  <!-- Header Category Badge -->
+  <g transform="translate(600, 75)">
+    <text x="0" y="0" text-anchor="middle" class="tag-text">AI SYSTEMS &amp; FULL-STACK ARCHITECTURE</text>
   </g>
 
-  <g transform="translate(710, 102)">
-    <text x="0" y="16" class="tag-text" fill="#8A2BE2">APP DEV :: MULTI-AGENT</text>
+  <!-- GREEK VECTOR TYPOGRAPHY FOR "SHREYAS RAJASHEKAR" -->
+  <!-- Name Line 1: SHREYAS -->
+  <g transform="translate(365, 110)">
+    <!-- S -->
+    <path class="greek-letter" d="M 24 6 L 6 6 L 18 24 L 6 42 L 24 42" />
+    <!-- H -->
+    <path class="greek-letter" d="M 36 6 L 36 42 M 54 6 L 54 42 M 36 24 L 54 24" />
+    <!-- R -->
+    <path class="greek-letter" d="M 66 6 L 66 42 M 66 6 L 82 6 L 86 15 L 82 24 L 66 24 M 76 24 L 86 42" />
+    <!-- E -->
+    <path class="greek-letter" d="M 98 6 L 98 42 M 98 6 L 114 6 M 98 24 L 110 24 M 98 42 L 114 42" />
+    <!-- Y -->
+    <path class="greek-letter" d="M 126 6 L 135 24 L 144 6 M 135 24 L 135 42" />
+    <!-- A -->
+    <path class="greek-letter" d="M 165 6 L 155 42 M 165 6 L 175 42 M 159 30 L 171 30" />
+    <!-- S -->
+    <path class="greek-letter" d="M 204 6 L 186 6 L 198 24 L 186 42 L 204 42" />
   </g>
 
-  <!-- Main Hero Title (Classical / Greek Serif Font Aesthetic) -->
-  <text x="600" y="195" text-anchor="middle" class="greek-title">ΣHREYAS RAJASHEKAR</text>
-
-  <!-- Divider Bar -->
-  <path d="M 330 220 L 870 220" stroke="url(#purple-mint)" stroke-width="2" stroke-linecap="round" />
-
-  <!-- Subtitle emphasizing ML, LLM, App Dev -->
-  <text x="600" y="255" text-anchor="middle" class="subtitle-text">MACHINE LEARNING &amp; LLMs  |  APP DEVELOPMENT  |  V2V SYSTEMS</text>
-  
-  <!-- Bottom Pill Badges -->
-  <g transform="translate(325, 282)">
-    <rect x="0" y="0" width="165" height="26" rx="6" fill="#161B22" stroke="#00F5FF" stroke-opacity="0.6" stroke-width="1"/>
-    <text x="82.5" y="17" text-anchor="middle" font-family="Fira Code" font-size="11" fill="#00F5FF">🧠 ML &amp; LLM ARCH</text>
-
-    <rect x="180" y="0" width="185" height="26" rx="6" fill="#161B22" stroke="#5B8CFF" stroke-opacity="0.6" stroke-width="1"/>
-    <text x="272.5" y="17" text-anchor="middle" font-family="Fira Code" font-size="11" fill="#5B8CFF">📱 FULL-STACK APP DEV</text>
-
-    <rect x="380" y="0" width="170" height="26" rx="6" fill="#161B22" stroke="#00FFA6" stroke-opacity="0.6" stroke-width="1"/>
-    <text x="465" y="17" text-anchor="middle" font-family="Fira Code" font-size="11" fill="#00FFA6">🤖 MULTI-AGENT AI</text>
+  <!-- Name Line 2: RAJASHEKAR -->
+  <g transform="translate(320, 170)">
+    <!-- R -->
+    <path class="greek-letter" d="M 6 6 L 6 42 M 6 6 L 22 6 L 26 15 L 22 24 L 6 24 M 16 24 L 26 42" />
+    <!-- A -->
+    <path class="greek-letter" d="M 46 6 L 36 42 M 46 6 L 56 42 M 40 30 L 52 30" />
+    <!-- J -->
+    <path class="greek-letter" d="M 66 6 L 84 6 M 78 6 L 78 36 L 68 42" />
+    <!-- A -->
+    <path class="greek-letter" d="M 104 6 L 94 42 M 104 6 L 114 42 M 98 30 L 110 30" />
+    <!-- S -->
+    <path class="greek-letter" d="M 142 6 L 124 6 L 136 24 L 124 42 L 142 42" />
+    <!-- H -->
+    <path class="greek-letter" d="M 154 6 L 154 42 M 172 6 L 172 42 M 154 24 L 172 24" />
+    <!-- E -->
+    <path class="greek-letter" d="M 184 6 L 184 42 M 184 6 L 200 6 M 184 24 L 196 24 M 184 42 L 200 42" />
+    <!-- K -->
+    <path class="greek-letter" d="M 212 6 L 212 42 M 228 6 L 212 24 L 228 42" />
+    <!-- A -->
+    <path class="greek-letter" d="M 248 6 L 238 42 M 248 6 L 258 42 M 242 30 L 254 30" />
+    <!-- R -->
+    <path class="greek-letter" d="M 270 6 L 270 42 M 270 6 L 286 6 L 290 15 L 286 24 L 270 24 M 280 24 L 290 42" />
   </g>
+
+  <!-- Minimalist Separator Line -->
+  <line x1="450" y1="242" x2="750" y2="242" stroke="#388BFD" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="275" text-anchor="middle" class="subtitle-text">MACHINE LEARNING &amp; LLMs   •   APP DEVELOPMENT   •   V2V OS</text>
 </svg>

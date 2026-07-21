@@ -1,24 +1,24 @@
 <div align="center">
 
-<!-- HERO BANNER WITH GREEK TYPOGRAPHY, ML, LLM & APP DEV FOCUS -->
-<img src="./assets/hero-banner.svg" alt="Shreyas Rajashekar Banner" width="100%" />
+<!-- MINIMALIST GREEK VECTOR TYPOGRAPHY HERO BANNER -->
+<img src="./assets/hero-banner.svg" alt="Shreyas Rajashekar Greek Typography Banner" width="100%" />
 
 <br/>
 
 <!-- ANIMATED TYPING HEADER -->
 <a href="https://shreyas-rajashekar.vercel.app">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=00F5FF&background=0D111700&center=true&vCenter=true&width=750&lines=%3E+Machine+Learning+%26+LLM+Architecture;%3E+Full+Stack+%26+Mobile+App+Development;%3E+Multi-Agent+AI+Orchestration;%3E+Vehicle-to-Vehicle+Networks;" alt="Typing Header" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2800&pause=900&color=58A6FF&background=0D111700&center=true&vCenter=true&width=750&lines=%3E+Machine+Learning+%26+LLM+Architecture;%3E+Full+Stack+%26+Mobile+App+Development;%3E+Multi-Agent+AI+Orchestration;%3E+Vehicle-to-Vehicle+Networks;" alt="Typing Header" />
 </a>
 
 <br/>
 
-<!-- QUICK NAVIGATION BADGES -->
+<!-- NAVIGATION BADGES -->
 <p align="center">
-  <a href="https://shreyas-rajashekar.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-0D1117?style=for-the-badge&logo=vercel&logoColor=00F5FF&labelColor=0D1117" alt="Portfolio"/></a>
-  <a href="https://github.com/shreyasrajshekar"><img src="https://img.shields.io/badge/GITHUB-0D1117?style=for-the-badge&logo=github&logoColor=5B8CFF&labelColor=0D1117" alt="GitHub"/></a>
-  <a href="https://www.linkedin.com/in/shreyas-rajashekar-me/"><img src="https://img.shields.io/badge/LINKEDIN-0D1117?style=for-the-badge&logo=linkedin&logoColor=00FFA6&labelColor=0D1117" alt="LinkedIn"/></a>
-  <a href="https://leetcode.com/u/shreyasrajshekar/"><img src="https://img.shields.io/badge/LEETCODE-0D1117?style=for-the-badge&logo=leetcode&logoColor=FFA116&labelColor=0D1117" alt="LeetCode"/></a>
-  <a href="mailto:shreyasrajashekar@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0D1117?style=for-the-badge&logo=gmail&logoColor=8A2BE2&labelColor=0D1117" alt="Email"/></a>
+  <a href="https://shreyas-rajashekar.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-161B22?style=for-the-badge&logo=vercel&logoColor=58A6FF&labelColor=161B22" alt="Portfolio"/></a>
+  <a href="https://github.com/shreyasrajshekar"><img src="https://img.shields.io/badge/GITHUB-161B22?style=for-the-badge&logo=github&logoColor=C9D1D9&labelColor=161B22" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/shreyas-rajashekar-me/"><img src="https://img.shields.io/badge/LINKEDIN-161B22?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=161B22" alt="LinkedIn"/></a>
+  <a href="https://leetcode.com/u/shreyasrajshekar/"><img src="https://img.shields.io/badge/LEETCODE-161B22?style=for-the-badge&logo=leetcode&logoColor=FFA116&labelColor=161B22" alt="LeetCode"/></a>
+  <a href="mailto:shreyasrajshekar@gmail.com"><img src="https://img.shields.io/badge/EMAIL-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161B22" alt="Email"/></a>
 </p>
 
 <img src="./assets/divider.svg" width="100%" />
@@ -28,7 +28,7 @@
 <!-- NEAT MINIMALISTIC SYSTEM SVG -->
 <div align="center">
 
-<img src="./assets/system-status.svg" alt="System Status" width="100%" />
+<img src="./assets/system-status.svg" alt="System Status Overview" width="100%" />
 
 <br/><br/>
 
@@ -36,13 +36,13 @@
 
 </div>
 
-## ⚡ TECH RADAR & ARCHITECTURE STACK
+## ⚡ TECH RADAR & STACK
 
 ### 🧠 Machine Learning, LLMs & AI Systems
 <p align="left">
   <img src="https://skillicons.dev/icons?i=py,pytorch&theme=dark" />
-  <img src="https://img.shields.io/badge/LLM_Orchestration-0D1117?style=for-the-badge&logo=openai&logoColor=00F5FF" />
-  <img src="https://img.shields.io/badge/Multi--Agent_Systems-0D1117?style=for-the-badge&logo=python&logoColor=00FFA6" />
+  <img src="https://img.shields.io/badge/LLM_Orchestration-161B22?style=for-the-badge&logo=openai&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/Multi--Agent_Systems-161B22?style=for-the-badge&logo=python&logoColor=3FB950" />
 </p>
 
 ### 📱 Full-Stack & App Development
@@ -58,10 +58,9 @@
 ### 🔌 Hardware, Systems & IoT
 <p align="left">
   <img src="https://skillicons.dev/icons?i=arduino,raspberrypi,cpp,rust&theme=dark" />
-  <img src="https://img.shields.io/badge/CAN_Bus_%26_V2V-0D1117?style=for-the-badge&logo=tesla&logoColor=00F5FF" />
 </p>
 
-### 🛠️ Dev Tools & OS
+### 🛠️ Dev Tools & Operating Systems
 <p align="left">
   <img src="https://skillicons.dev/icons?i=git,github,vscode,linux,bash&theme=dark" />
 </p>
@@ -72,22 +71,22 @@
 
 ```
 PYTHON & ML        ████████████████████  92%  [PyTorch, LLM Orchestration, Scikit]
-TYPESCRIPT / JS    ██████████████████░░  88%  [Full-Stack & App Development]
+TYPESCRIPT / JS    ██████████████████░░  88%  [Full-Stack & Mobile App Dev]
 REACT / NEXT.JS    █████████████████░░░  85%  [Frontend Engineering]
 NODE.JS / BACKEND  ████████████████░░░░  82%  [REST APIs & Microservices]
 ARDUINO / IoT      ███████████████░░░░░  75%  [Embedded Sensors]
-C++                ████████████░░░░░░░░  60%  [Systems & Microcontrollers]
+C++                ████████████░░░░░░░░  60%  [Microcontrollers & Systems]
 RUST               ████████░░░░░░░░░░░░  40%  [Low-Level Systems Learning]
 ```
 
 <br/>
 
-<!-- NATIVE SVG TELEMETRY STATS CARD -->
+<!-- MINIMALIST SVG TELEMETRY STATS CARD -->
 <div align="center">
   <img src="./assets/divider.svg" width="100%" />
 </div>
 
-## 📊 TELEMETRY & STATS DASHBOARD
+## 📊 TELEMETRY & METRICS DASHBOARD
 
 <div align="center">
 

@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- BLACK & WHITE MINIMALIST GREEK VECTOR TYPOGRAPHY HERO BANNER (CENTERED) -->
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/hero-banner.svg?v=20260721_v3" alt="Shreyas Rajashekar Greek Typography Banner" width="100%" />
+<img src="./assets/hero-banner.svg" alt="Shreyas Rajashekar Greek Typography Banner" width="100%" />
 
 <br/>
 
@@ -21,18 +21,18 @@
   <a href="mailto:shreyasrajshekar@gmail.com"><img src="https://img.shields.io/badge/EMAIL-161B22?style=for-the-badge&logo=gmail&logoColor=FFFFFF&labelColor=161B22" alt="Email"/></a>
 </p>
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721_v3" width="100%" />
+<img src="./assets/divider.svg" width="100%" />
 
 </div>
 
 <!-- NEAT MINIMALISTIC BLACK & WHITE SYSTEM SVG -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/system-status.svg?v=20260721_v3" alt="System Status Overview" width="100%" />
+<img src="./assets/system-status.svg" alt="System Status Overview" width="100%" />
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721_v3" width="100%" />
+<img src="./assets/divider.svg" width="100%" />
 
 </div>
 
@@ -83,14 +83,14 @@ RUST               ████████░░░░░░░░░░░░ 
 
 <!-- MINIMALIST SVG TELEMETRY STATS CARD -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721_v3" width="100%" />
+  <img src="./assets/divider.svg" width="100%" />
 </div>
 
 ## 📊 TELEMETRY & METRICS DASHBOARD
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/stats-card.svg?v=20260721_v3" alt="Stats Dashboard" width="100%" />
+<img src="./assets/stats-card.svg" alt="Stats Dashboard" width="100%" />
 
 </div>
 
@@ -99,7 +99,7 @@ RUST               ████████░░░░░░░░░░░░ 
 <!-- PHILOSOPHY & FOOTER -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721_v3" width="100%" />
+<img src="./assets/divider.svg" width="100%" />
 
 ### 💬 PHILOSOPHY
 
@@ -108,7 +108,7 @@ RUST               ████████░░░░░░░░░░░░ 
 <br/>
 
 <!-- FOOTER ANIMATED SVG -->
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/footer.svg?v=20260721_v3" width="100%" />
+<img src="./assets/footer.svg" width="100%" />
 
 <br/><br/>
 

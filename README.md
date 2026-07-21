@@ -1,38 +1,38 @@
 <div align="center">
 
-<!-- MINIMALIST GREEK VECTOR TYPOGRAPHY HERO BANNER -->
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/hero-banner.svg?v=20260721" alt="Shreyas Rajashekar Greek Typography Banner" width="100%" />
+<!-- BLACK & WHITE MINIMALIST GREEK VECTOR TYPOGRAPHY HERO BANNER (CENTERED) -->
+<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/hero-banner.svg?v=20260721_v3" alt="Shreyas Rajashekar Greek Typography Banner" width="100%" />
 
 <br/>
 
-<!-- ANIMATED TYPING HEADER -->
+<!-- ANIMATED TYPING HEADER (BLACK & WHITE MONOCHROME) -->
 <a href="https://shreyas-rajashekar.vercel.app">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2800&pause=900&color=58A6FF&background=0D111700&center=true&vCenter=true&width=750&lines=%3E+Machine+Learning+%26+LLM+Architecture;%3E+Full+Stack+%26+Mobile+App+Development;%3E+Multi-Agent+AI+Orchestration;%3E+Vehicle-to-Vehicle+Networks;" alt="Typing Header" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2800&pause=900&color=FFFFFF&background=0D111700&center=true&vCenter=true&width=750&lines=%3E+Machine+Learning+%26+LLM+Architecture;%3E+Full+Stack+%26+Mobile+App+Development;%3E+Multi-Agent+AI+Orchestration;%3E+Vehicle-to-Vehicle+Networks;" alt="Typing Header" />
 </a>
 
 <br/>
 
-<!-- NAVIGATION BADGES -->
+<!-- MONOCHROME NAVIGATION BADGES -->
 <p align="center">
-  <a href="https://shreyas-rajashekar.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-161B22?style=for-the-badge&logo=vercel&logoColor=58A6FF&labelColor=161B22" alt="Portfolio"/></a>
-  <a href="https://github.com/shreyasrajshekar"><img src="https://img.shields.io/badge/GITHUB-161B22?style=for-the-badge&logo=github&logoColor=C9D1D9&labelColor=161B22" alt="GitHub"/></a>
-  <a href="https://www.linkedin.com/in/shreyas-rajashekar-me/"><img src="https://img.shields.io/badge/LINKEDIN-161B22?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=161B22" alt="LinkedIn"/></a>
-  <a href="https://leetcode.com/u/shreyasrajshekar/"><img src="https://img.shields.io/badge/LEETCODE-161B22?style=for-the-badge&logo=leetcode&logoColor=FFA116&labelColor=161B22" alt="LeetCode"/></a>
-  <a href="mailto:shreyasrajshekar@gmail.com"><img src="https://img.shields.io/badge/EMAIL-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161B22" alt="Email"/></a>
+  <a href="https://shreyas-rajashekar.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-161B22?style=for-the-badge&logo=vercel&logoColor=FFFFFF&labelColor=161B22" alt="Portfolio"/></a>
+  <a href="https://github.com/shreyasrajshekar"><img src="https://img.shields.io/badge/GITHUB-161B22?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=161B22" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/shreyas-rajashekar-me/"><img src="https://img.shields.io/badge/LINKEDIN-161B22?style=for-the-badge&logo=linkedin&logoColor=FFFFFF&labelColor=161B22" alt="LinkedIn"/></a>
+  <a href="https://leetcode.com/u/shreyasrajshekar/"><img src="https://img.shields.io/badge/LEETCODE-161B22?style=for-the-badge&logo=leetcode&logoColor=FFFFFF&labelColor=161B22" alt="LeetCode"/></a>
+  <a href="mailto:shreyasrajshekar@gmail.com"><img src="https://img.shields.io/badge/EMAIL-161B22?style=for-the-badge&logo=gmail&logoColor=FFFFFF&labelColor=161B22" alt="Email"/></a>
 </p>
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721" width="100%" />
+<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721_v3" width="100%" />
 
 </div>
 
-<!-- NEAT MINIMALISTIC SYSTEM SVG -->
+<!-- NEAT MINIMALISTIC BLACK & WHITE SYSTEM SVG -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/system-status.svg?v=20260721" alt="System Status Overview" width="100%" />
+<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/system-status.svg?v=20260721_v3" alt="System Status Overview" width="100%" />
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721" width="100%" />
+<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721_v3" width="100%" />
 
 </div>
 
@@ -41,8 +41,8 @@
 ### 🧠 Machine Learning, LLMs & AI Systems
 <p align="left">
   <img src="https://skillicons.dev/icons?i=py,pytorch&theme=dark" />
-  <img src="https://img.shields.io/badge/LLM_Orchestration-161B22?style=for-the-badge&logo=openai&logoColor=58A6FF" />
-  <img src="https://img.shields.io/badge/Multi--Agent_Systems-161B22?style=for-the-badge&logo=python&logoColor=3FB950" />
+  <img src="https://img.shields.io/badge/LLM_Orchestration-161B22?style=for-the-badge&logo=openai&logoColor=FFFFFF" />
+  <img src="https://img.shields.io/badge/Multi--Agent_Systems-161B22?style=for-the-badge&logo=python&logoColor=FFFFFF" />
 </p>
 
 ### 📱 Full-Stack & App Development
@@ -83,14 +83,14 @@ RUST               ████████░░░░░░░░░░░░ 
 
 <!-- MINIMALIST SVG TELEMETRY STATS CARD -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721" width="100%" />
+  <img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721_v3" width="100%" />
 </div>
 
 ## 📊 TELEMETRY & METRICS DASHBOARD
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/stats-card.svg?v=20260721" alt="Stats Dashboard" width="100%" />
+<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/stats-card.svg?v=20260721_v3" alt="Stats Dashboard" width="100%" />
 
 </div>
 
@@ -99,7 +99,7 @@ RUST               ████████░░░░░░░░░░░░ 
 <!-- PHILOSOPHY & FOOTER -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721" width="100%" />
+<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/divider.svg?v=20260721_v3" width="100%" />
 
 ### 💬 PHILOSOPHY
 
@@ -108,7 +108,7 @@ RUST               ████████░░░░░░░░░░░░ 
 <br/>
 
 <!-- FOOTER ANIMATED SVG -->
-<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/footer.svg?v=20260721" width="100%" />
+<img src="https://raw.githubusercontent.com/shreyasrajshekar/shreyasrajshekar/main/assets/footer.svg?v=20260721_v3" width="100%" />
 
 <br/><br/>
 

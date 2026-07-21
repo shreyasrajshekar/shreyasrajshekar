@@ -1,54 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="100%" height="100%">
-  <defs>
-    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#161B22" />
-      <stop offset="100%" stop-color="#0D1117" />
-    </linearGradient>
-  </defs>
-
   <style>
-    .stat-header { font-family: 'Fira Code', monospace; font-size: 13px; font-weight: 600; fill: #58A6FF; letter-spacing: 2px; }
-    .stat-label { font-family: 'Fira Code', monospace; font-size: 11px; fill: #8B949E; }
-    .stat-num { font-family: 'Fira Code', monospace; font-size: 20px; font-weight: 700; fill: #F0F6FC; }
-    .stat-sub { font-family: 'Fira Code', monospace; font-size: 11px; fill: #58A6FF; }
+    .stat-hdr { font-family: 'Fira Code', monospace; font-size: 13px; font-weight: 600; fill: #FFFFFF; letter-spacing: 2px; }
+    .stat-lbl { font-family: 'Fira Code', monospace; font-size: 11px; fill: #888888; }
+    .stat-num { font-family: 'Fira Code', monospace; font-size: 20px; font-weight: 700; fill: #FFFFFF; }
+    .stat-sub { font-family: 'Fira Code', monospace; font-size: 11px; fill: #AAAAAA; }
   </style>
 
-  <!-- Card Outer Frame -->
-  <rect width="1000" height="200" rx="10" fill="url(#card-bg)" stroke="#30363D" stroke-width="1.2"/>
+  <!-- Card Frame -->
+  <rect width="1000" height="200" rx="10" fill="#0D1117" stroke="#333333" stroke-width="1.2"/>
 
-  <!-- Top Header -->
-  <text x="30" y="32" class="stat-header">TELEMETRY &amp; METRICS</text>
-  <line x1="30" y1="42" x2="970" y2="42" stroke="#30363D" stroke-width="1"/>
+  <!-- Header -->
+  <text x="500" y="32" text-anchor="middle" class="stat-hdr">TELEMETRY &amp; METRICS</text>
+  <line x1="30" y1="42" x2="970" y2="42" stroke="#333333" stroke-width="1"/>
 
-  <!-- Metric Column 1: Repos -->
+  <!-- Column 1 -->
   <g transform="translate(30, 65)">
-    <rect width="210" height="110" rx="8" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
-    <text x="20" y="30" class="stat-label">REPOSITORIES</text>
+    <rect width="210" height="110" rx="8" fill="#12161F" stroke="#333333" stroke-width="1"/>
+    <text x="20" y="30" class="stat-lbl">REPOSITORIES</text>
     <text x="20" y="65" class="stat-num">28+</text>
     <text x="20" y="90" class="stat-sub">AI, Web &amp; Systems</text>
   </g>
 
-  <!-- Metric Column 2: Tech Domains -->
+  <!-- Column 2 -->
   <g transform="translate(265, 65)">
-    <rect width="220" height="110" rx="8" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
-    <text x="20" y="30" class="stat-label">PRIMARY DOMAIN</text>
+    <rect width="220" height="110" rx="8" fill="#12161F" stroke="#333333" stroke-width="1"/>
+    <text x="20" y="30" class="stat-lbl">PRIMARY DOMAIN</text>
     <text x="20" y="62" class="stat-num" font-size="16">ML / LLMs &amp; Apps</text>
     <text x="20" y="90" class="stat-sub">Full Stack &amp; V2V OS</text>
   </g>
 
-  <!-- Metric Column 3: LeetCode -->
+  <!-- Column 3 -->
   <g transform="translate(510, 65)">
-    <rect width="220" height="110" rx="8" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
-    <text x="20" y="30" class="stat-label">ALGORITHMIC PRACTICE</text>
+    <rect width="220" height="110" rx="8" fill="#12161F" stroke="#333333" stroke-width="1"/>
+    <text x="20" y="30" class="stat-lbl">ALGORITHMIC PRACTICE</text>
     <text x="20" y="62" class="stat-num" font-size="17">LeetCode</text>
     <text x="20" y="90" class="stat-sub">DSA &amp; Problem Solving</text>
   </g>
 
-  <!-- Metric Column 4: System Availability -->
+  <!-- Column 4 -->
   <g transform="translate(755, 65)">
-    <rect width="215" height="110" rx="8" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
-    <text x="20" y="30" class="stat-label">AVAILABILITY</text>
-    <text x="20" y="65" class="stat-num" fill="#3FB950">100%</text>
+    <rect width="215" height="110" rx="8" fill="#12161F" stroke="#333333" stroke-width="1"/>
+    <text x="20" y="30" class="stat-lbl">AVAILABILITY</text>
+    <text x="20" y="65" class="stat-num">100%</text>
     <text x="20" y="90" class="stat-sub">Open for Collaboration</text>
   </g>
 </svg>

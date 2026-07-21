@@ -1,122 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
   <defs>
-    <!-- Vercel / Linear Style Minimalist Background -->
-    <radialGradient id="ambient-light" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#1C2128" />
-      <stop offset="60%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#05070A" />
-    </radialGradient>
+    <!-- Black & White Minimalist Background -->
+    <linearGradient id="bg-monochrome" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#12161F" />
+      <stop offset="50%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#080A0E" />
+    </linearGradient>
 
-    <!-- Subtle Soft Glow -->
-    <filter id="subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
+    <!-- Subtle White Glow -->
+    <filter id="white-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <!-- Elegant Linear Gradient for Name -->
-    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="50%" stop-color="#E6EDF3" />
-      <stop offset="100%" stop-color="#58A6FF" />
-    </linearGradient>
+    <!-- Minimal White-to-Grey Greek Pattern Band -->
+    <pattern id="greek-band-bw" width="36" height="14" patternUnits="userSpaceOnUse">
+      <path d="M 0 14 L 0 0 L 14 0 L 14 8 L 7 8 L 7 4 L 10 4 M 14 14 L 21 14 L 21 0 L 35 0 L 35 8 L 28 8 L 28 4 L 31 4" fill="none" stroke="#888888" stroke-opacity="0.3" stroke-width="1.2"/>
+    </pattern>
   </defs>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;display=swap');
 
-    .greek-char {
+    .greek-bw {
       fill: none;
-      stroke: url(#text-grad);
+      stroke: #FFFFFF;
       stroke-width: 3.2;
       stroke-linecap: round;
       stroke-linejoin: round;
-      filter: url(#subtle-glow);
+      filter: url(#white-glow);
       stroke-dasharray: 350;
       stroke-dashoffset: 350;
-      animation: strokeDraw 2.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation: drawStroke 2.6s cubic-bezier(0.16, 1, 0.3, 1) forwards, subtleShimmer 4s ease-in-out infinite alternate 2.6s;
     }
 
-    .subtitle-sub {
+    .badge-bw {
       font-family: 'Fira Code', monospace;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 6px;
-      fill: #8B949E;
-      opacity: 0;
-      animation: fadeIn 1.2s ease-out forwards 1.8s;
-    }
-
-    .badge-label {
-      font-family: 'Fira Code', monospace;
-      font-size: 10px;
-      fill: #58A6FF;
-      letter-spacing: 3px;
+      font-size: 11px;
+      fill: #AAAAAA;
+      letter-spacing: 4px;
       opacity: 0;
       animation: fadeIn 1.2s ease-out forwards 1.2s;
     }
 
-    @keyframes strokeDraw {
+    .sub-bw {
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      fill: #DDDDDD;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-out forwards 1.8s;
+    }
+
+    @keyframes drawStroke {
       to { stroke-dashoffset: 0; }
     }
 
     @keyframes fadeIn {
       to { opacity: 1; }
     }
+
+    @keyframes subtleShimmer {
+      0% { opacity: 0.85; stroke: #FFFFFF; }
+      100% { opacity: 1; stroke: #E0E0E0; }
+    }
   </style>
 
   <!-- Background Canvas -->
-  <rect width="1200" height="280" fill="url(#ambient-light)" rx="12" />
-  <rect width="1200" height="280" fill="none" stroke="#30363D" stroke-width="1" rx="12" />
+  <rect width="1200" height="300" fill="url(#bg-monochrome)" rx="12" />
+  <rect width="1200" height="300" fill="none" stroke="#333333" stroke-width="1" rx="12" />
 
-  <!-- Minimal Top Subtitle Badge -->
-  <text x="600" y="55" text-anchor="middle" class="badge-label">SYSTEM ARCHITECT // ML • LLM • APP DEV</text>
-  <line x1="500" y1="68" x2="700" y2="68" stroke="#30363D" stroke-width="1" />
+  <!-- Top & Bottom Greek Meander Pattern -->
+  <rect x="30" y="24" width="1140" height="12" fill="url(#greek-band-bw)" />
+  <rect x="30" y="264" width="1140" height="12" fill="url(#greek-band-bw)" />
 
-  <!-- GREEK VECTOR TYPOGRAPHY: SHREYAS -->
-  <g transform="translate(435, 95)">
-    <!-- S -->
-    <path class="greek-char" d="M 22 4 L 4 4 L 16 22 L 4 40 L 22 40" />
+  <!-- Centered Top Header Badge -->
+  <text x="600" y="62" text-anchor="middle" class="badge-bw">AI SYSTEMS &amp; FULL-STACK ARCHITECTURE</text>
+  <line x1="480" y1="74" x2="720" y2="74" stroke="#444444" stroke-width="1" />
+
+  <!-- GREEK VECTOR TYPOGRAPHY: SHREYAS (MATHEMATICALLY CENTERED AT X=600) -->
+  <g transform="translate(480, 100)">
+    <!-- S (NON-SIGMA ANGULAR S) -->
+    <path class="greek-bw" d="M 22 4 L 4 4 L 4 20 L 22 22 L 22 40 L 4 40" />
     <!-- H -->
-    <path class="greek-char" d="M 34 4 L 34 40 M 52 4 L 52 40 M 34 22 L 52 22" />
+    <path class="greek-bw" transform="translate(36, 0)" d="M 4 4 L 4 40 M 22 4 L 22 40 M 4 22 L 22 22" />
     <!-- R -->
-    <path class="greek-char" d="M 64 4 L 64 40 M 64 4 L 78 4 L 82 13 L 78 22 L 64 22 M 74 22 L 84 40" />
+    <path class="greek-bw" transform="translate(72, 0)" d="M 4 4 L 4 40 M 4 4 L 18 4 L 22 13 L 18 22 L 4 22 M 14 22 L 22 40" />
     <!-- E -->
-    <path class="greek-char" d="M 96 4 L 96 40 M 96 4 L 112 4 M 96 22 L 108 22 M 96 40 L 112 40" />
+    <path class="greek-bw" transform="translate(108, 0)" d="M 4 4 L 4 40 M 4 4 L 20 4 M 4 22 L 16 22 M 4 40 L 20 40" />
     <!-- Y -->
-    <path class="greek-char" d="M 124 4 L 133 20 L 142 4 M 133 20 L 133 40" />
+    <path class="greek-bw" transform="translate(144, 0)" d="M 4 4 L 13 20 L 22 4 M 13 20 L 13 40" />
     <!-- A -->
-    <path class="greek-char" d="M 163 4 L 153 40 M 163 4 L 173 40 M 157 28 L 169 28" />
-    <!-- S -->
-    <path class="greek-char" d="M 202 4 L 184 4 L 196 22 L 184 40 L 202 40" />
+    <path class="greek-bw" transform="translate(180, 0)" d="M 13 4 L 3 40 M 13 4 L 23 40 M 7 28 L 19 28" />
+    <!-- S (NON-SIGMA ANGULAR S) -->
+    <path class="greek-bw" transform="translate(216, 0)" d="M 22 4 L 4 4 L 4 20 L 22 22 L 22 40 L 4 40" />
   </g>
 
-  <!-- GREEK VECTOR TYPOGRAPHY: RAJASHEKAR -->
-  <g transform="translate(390, 152)">
+  <!-- GREEK VECTOR TYPOGRAPHY: RAJASHEKAR (MATHEMATICALLY CENTERED AT X=600) -->
+  <g transform="translate(426, 160)">
     <!-- R -->
-    <path class="greek-char" d="M 4 4 L 4 40 M 4 4 L 18 4 L 22 13 L 18 22 L 4 22 M 14 22 L 24 40" />
+    <path class="greek-bw" transform="translate(0, 0)" d="M 4 4 L 4 40 M 4 4 L 18 4 L 22 13 L 18 22 L 4 22 M 14 22 L 22 40" />
     <!-- A -->
-    <path class="greek-char" d="M 44 4 L 34 40 M 44 4 L 54 40 M 38 28 L 50 28" />
+    <path class="greek-bw" transform="translate(36, 0)" d="M 13 4 L 3 40 M 13 4 L 23 40 M 7 28 L 19 28" />
     <!-- J -->
-    <path class="greek-char" d="M 64 4 L 82 4 M 76 4 L 76 34 L 66 40" />
+    <path class="greek-bw" transform="translate(72, 0)" d="M 4 4 L 22 4 M 16 4 L 16 34 L 6 40" />
     <!-- A -->
-    <path class="greek-char" d="M 102 4 L 92 40 M 102 4 L 112 40 M 96 28 L 108 28" />
-    <!-- S -->
-    <path class="greek-char" d="M 140 4 L 122 4 L 134 22 L 122 40 L 140 40" />
+    <path class="greek-bw" transform="translate(108, 0)" d="M 13 4 L 3 40 M 13 4 L 23 40 M 7 28 L 19 28" />
+    <!-- S (NON-SIGMA ANGULAR S) -->
+    <path class="greek-bw" transform="translate(144, 0)" d="M 22 4 L 4 4 L 4 20 L 22 22 L 22 40 L 4 40" />
     <!-- H -->
-    <path class="greek-char" d="M 152 4 L 152 40 M 170 4 L 170 40 M 152 22 L 170 22" />
+    <path class="greek-bw" transform="translate(180, 0)" d="M 4 4 L 4 40 M 22 4 L 22 40 M 4 22 L 22 22" />
     <!-- E -->
-    <path class="greek-char" d="M 182 4 L 182 40 M 182 4 L 198 4 M 182 22 L 194 22 M 182 40 L 198 40" />
+    <path class="greek-bw" transform="translate(216, 0)" d="M 4 4 L 4 40 M 4 4 L 20 4 M 4 22 L 16 22 M 4 40 L 20 40" />
     <!-- K -->
-    <path class="greek-char" d="M 210 4 L 210 40 M 226 4 L 210 22 L 226 40" />
+    <path class="greek-bw" transform="translate(252, 0)" d="M 4 4 L 4 40 M 20 4 L 4 22 L 20 40" />
     <!-- A -->
-    <path class="greek-char" d="M 246 4 L 236 40 M 246 4 L 256 40 M 240 28 L 252 28" />
+    <path class="greek-bw" transform="translate(288, 0)" d="M 13 4 L 3 40 M 13 4 L 23 40 M 7 28 L 19 28" />
     <!-- R -->
-    <path class="greek-char" d="M 268 4 L 268 40 M 268 4 L 282 4 L 286 13 L 282 22 L 268 22 M 278 22 L 288 40" />
+    <path class="greek-bw" transform="translate(324, 0)" d="M 4 4 L 4 40 M 4 4 L 18 4 L 22 13 L 18 22 L 4 22 M 14 22 L 22 40" />
   </g>
 
-  <!-- Minimal Subtitle -->
-  <text x="600" y="232" text-anchor="middle" class="subtitle-sub">MACHINE LEARNING &amp; LLMs   •   APP DEVELOPMENT   •   V2V OS</text>
+  <!-- Centered Separator Line -->
+  <line x1="460" y1="222" x2="740" y2="222" stroke="#444444" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Centered Black & White Subtitle -->
+  <text x="600" y="248" text-anchor="middle" class="sub-bw">MACHINE LEARNING &amp; LLMs   •   APP DEVELOPMENT   •   V2V OS</text>
 </svg>
